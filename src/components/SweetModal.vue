@@ -275,7 +275,7 @@
 				}
 
 				this.is_open = true
-				this._lockBody()
+				// this._lockBody()
 				this._animateIcon()
 
 				setTimeout(() => this.visible = true, 30)
@@ -287,10 +287,11 @@
 			 * Emits an event 'close'
 			 */
 			close() {
-				this.visible = false
-				this._unlockBody()
+				// this.visible = false
+				// this._unlockBody()
 
 				setTimeout(() => this.is_open = false, 300)
+				setTimeout(() => this.visible = false, 100)
 				this.$emit('close')
 			},
 
@@ -316,8 +317,8 @@
 			},
 
 			_unlockBody() {
-				document.body.style.height = this.backups.body.height
-				document.body.style.overflow = this.backups.body.overflow
+				// document.body.style.height = this.backups.body.height
+				// document.body.style.overflow = this.backups.body.overflow
 			},
 
 			_onOverlayClick(event) {
