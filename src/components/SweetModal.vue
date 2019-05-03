@@ -317,6 +317,7 @@
 			},
 
 			_unlockBody() {
+				// adding comment to verify install
 				// document.body.style.height = this.backups.body.height
 				// document.body.style.overflow = this.backups.body.overflow
 			},
